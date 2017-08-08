@@ -1,0 +1,18 @@
+Proceso sin_titulo
+	definir costoVehiculoBase como entero;
+	definir comisionVendendor como real;
+	definir impuestoLocal como real;
+	definir impuestoEstatal como real;
+	definir valorRealVehiculo como real;
+	
+	escribir "Precio del vehiculo a comprar";
+	leer costoVehiculoBase;
+	
+	comisionVendendor <- costoVehiculoBase * 0.08;
+	impuestoLocal <- costoVehiculoBase * 0.03;
+	impuestoEstatal <- costoVehiculoBase *0.03;
+	valorRealVehiculo <- comisionVendendor + impuestoEstatal +impuestoLocal+costoVehiculoBase;
+	
+	Escribir "Total a pagar por el vehiculo";
+	escribir "$",valorRealVehiculo;
+FinProceso
