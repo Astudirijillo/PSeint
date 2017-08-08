@@ -1,0 +1,32 @@
+Proceso sin_titulo
+	definir totalAlumnos como real;
+	definir aprobados como real;
+	definir reprobados como real;
+	definir notables como real;
+	definir sobresalientes como real;
+	definir porcentajeAprobados como real;
+	definir porcentajeReprobado como real;
+	definir porcentajeSobresaliente como real;
+	definir porcentajeNotables como real;
+	
+	escribir "Total de alumnos";
+	leer totalAlumnos;
+	Escribir "Cantidad de alumnos aprobados";
+	leer aprobados;
+	Escribir "Cantidad de alumnos reprobados";
+	leer reprobados;
+	escribir "Cantidad de alumnos Notables";
+	leer notables;
+	escribir "Cantidad de alumnos Sobresaliente";
+	leer sobresalientes;
+	
+	porcentajeAprobados <- (100*aprobados)/totalAlumnos;
+	porcentajeReprobado <- (100*reprobados)/totalAlumnos;
+	porcentajeNotables <- (100*notables)/totalAlumnos;
+	porcentajeSobresaliente <- (100*sobresalientes)/totalAlumnos;
+	
+	Escribir "Porcentaje de aprobados: ", porcentajeAprobados,"%";
+	Escribir "Porcentaje de reprobados: ", porcentajeReprobado,"%";
+	Escribir "Porcentaje de Alumnos Notables: ", porcentajeNotables,"%";
+	Escribir "Porcentaje de Alumnos Sobresalientes: ", porcentajeSobresaliente,"%";
+FinProceso
