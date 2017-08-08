@@ -1,0 +1,21 @@
+Proceso sin_titulo
+	definir sueldoBase Como Entero;
+	definir sueldoHorasExtra como entero;
+	Definir horasExtras como entero;
+	definir sueldoFinal como entero;
+	definir descuento Como real;
+	
+	escribir "Ingrese sueldo base";
+	leer sueldoBase;
+	Escribir "Ingrese horas extra";
+	leer horasExtras;
+	Escribir "Ingrese pago por horas extra";
+	leer sueldoHorasExtra;
+	
+	sueldoFinal <- sueldoBase + (horasExtras * sueldoHorasExtra);
+	descuento <- sueldoFinal * 0.2;
+	
+	Escribir "Sueldo base: $", sueldoFinal;
+	Escribir "Descuento: $", descuento ;
+	Escribir "Sueldo final: $", (sueldoFinal-descuento);
+finProceso
