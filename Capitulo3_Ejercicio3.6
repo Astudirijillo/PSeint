@@ -1,0 +1,40 @@
+Proceso sin_titulo
+	
+	Definir orden Como Entero;
+	Definir total Como Entero;
+	total <-0;
+	Definir totalConIva Como Entero;
+	
+	Escribir "Lista de productos";
+	Escribir "1.- Completo Italiano";
+	Escribir "2.- Completo a la chilena";
+	Escribir "3.- Hamburguesa-queso";
+	Escribir "4.- Churrasco";
+	Escribir "5.- Cerveza";
+	Escribir "6.- Bebida";
+	Escribir "0 para terminar orden";
+	Repetir
+		leer orden;
+		Si orden = 1 Entonces
+			total <- 690 + total;
+		FinSi
+		Si orden = 2 Entonces
+			total <- 890 + total;
+		FinSi
+		Si orden = 3 Entonces
+			total <- 990 + total;
+		FinSi
+		Si orden = 4 Entonces
+			total <- 1100 + total;
+		FinSi
+		Si orden = 5 Entonces
+			total <- 700 + total;
+		FinSi
+		Si orden = 6 Entonces
+			total <- 500 + total;
+		FinSi
+	Hasta Que orden = 0;
+	Escribir "Total de la orden solicitada $",total;
+	totalConIva <- total +(total* 0.19);
+	Escribir "Total de la orden solicitada + IVA $",totalConIva;
+FinProceso
